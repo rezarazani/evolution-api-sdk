@@ -1,4 +1,4 @@
-export { EvolutionClient, } from './evolution-api-client';
+export { EvolutionClient } from './evolution-api-client';
 export type { EvolutionApiClientConfig } from './evolution-api-client';
 
 export { EvolutionApiError } from './utils';

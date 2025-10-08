@@ -65,7 +65,7 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': 'error',
 
         // Code quality rules
-        'complexity': ['warn', 10],
+        complexity: ['warn', 10],
         'max-depth': ['warn', 4],
         'max-lines-per-function': ['warn', 50],
         'max-params': ['warn', 4],

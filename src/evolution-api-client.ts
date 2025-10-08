@@ -12,8 +12,6 @@ export interface EvolutionApiClientConfig {
     timeout?: number;
 }
 
-
-
 export class EvolutionClient {
     private readonly http: HttpClient;
 
@@ -24,15 +22,13 @@ export class EvolutionClient {
     public readonly setting: SettingsNamespace;
     public readonly message: MessageNamespace;
 
-
-
     constructor(config: EvolutionApiClientConfig) {
         // Create fetch-based http client with configuration
         this.http = new FetchHttpClient(
             config.baseUrl.replace(/\/$/, ''),
             {
                 'Content-Type': 'application/json',
-                apikey : config.apiKey,
+                apikey: config.apiKey,
             },
             config.timeout ?? 30000
         );
@@ -43,8 +39,6 @@ export class EvolutionClient {
         this.webhook = new WebhookNamespace(this.http);
         this.setting = new SettingsNamespace(this.http);
         this.message = new MessageNamespace(this.http);
-
-        
     }
 
     // Utility method to get raw http client if needed

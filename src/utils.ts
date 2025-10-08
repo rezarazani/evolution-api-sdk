@@ -46,8 +46,6 @@ export class EvolutionApiError extends Error {
     }
 }
 
-
-
 export class FetchHttpClient implements HttpClient {
     public defaults: {
         baseURL: string;
