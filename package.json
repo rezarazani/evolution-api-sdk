@@ -1,6 +1,6 @@
 {
     "name": "evolution-api-sdk",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "TypeScript SDK for evolution-api",
     "main": "index.js",
     "scripts": {
